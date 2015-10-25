@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* CSS Document */
+/*  
+	*@Description: 云南大学文化产业研究院
+	*@Author:吕尉
+	*@Weibo:http://weibo.com/smlw
+*/
+
+
+/*全局*/
+body{margin:0px; background:#E6E6E6;font-size:13px;}
+.header{width:1200px;margin:0 auto;}
+/*链接*/
+a{text-decoration:none;outline: none;hide-focus: expression(this.hideFocus = true);}
+a:link,a:visited{text-decoration:none;color:#333333;} 
+a:hover{text-decoration:underline;color:#806401;}
+
+/*头部*/
+.header #top1,#top2,#top3,#top4,#top5,#top6,#top7,#top8,#top9,#top10,#top11,#top12{
+	width:300px;
+	height:125px;
+	float:left;
+	margin:0px;
+}
+.header #top1{background:url(img/top1.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top1.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top2{background:url(img/top2.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top2.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top3{background:url(img/top3.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top3.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top4{background:url(img/top4.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top4.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top5{background:url(img/top5.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top5.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top6{background:url(img/top6.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top6.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top7{background:url(img/top7.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top7.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top8{background:url(img/top8.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top8.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top9{background:url(img/top9.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top9.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top10{background:url(img/top10.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top10.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top11{background:url(img/top11.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top11.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+.header #top12{background:url(img/top12.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top12.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
+
+/*中英文*/
+.header #zh-CN{position:relative; top:94px;left:50px;}
+.header #Eng{position:relative;top:94px;left:70px;}
+
+/*导航*/
+.navbar{width:1200px;margin:0 auto;}
+.navbar #nav-left{width:203.6px; height:42px;background:url(img/nav-left.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/nav-left.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+.navbar #nav-main{width:823px; height:42px;background:url(img/nav-main.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/nav-main.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+.navbar #nav-right{width:173.4px; height:42px;background:url(img/nav-right.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/nav-right.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+
+.mainNav{margin:0px;padding:0;z-index:10000;}
+.mainNav li{position:relative;float:left;margin-top:8px;weidth:69px;height:24px;line-height:24px;text-align:center;list-style:none;}
+.mainNav #menu1{ width:69px;}
+.mainNav #menu2{ width:69px;margin-left:6px;}
+.mainNav li a,.mainNav li a:visited{color:#fff;height:24px;line-height:24px;text-align:center;display:inline-block;}
+.mainNav li a:hover,.mainNav li.active a{color:#FF7300;text-decoration:none;}
+.mainNav li dl{position:absolute;display:none;left:0;top:10px;padding:10px;background:#FFFD46;filter:alpha(opacity=80);opacity:0.8;z-index:9999999;}
+.mainNav li dl dd{width:100px;height:25px;line-height:25px;text-align:left;white-space:nowrap;margin:0px;padding:0px;}
+.mainNav li dl dd a{font-size:13px;} 
+.mainNav li.active dl dd a{font-size:13px;background:none;color:#000;}
+.mainNav li dl dd a:hover{font-size:13px;background:none;color:#FF0004;}
+
+.mainNav li.active dl{display:block;}
+
+/*内容*/
+.content{width:823px;height:100%;min-height:620px;margin:0 auto; padding-left:27px;}
+.content-left{width:400px;height:100%;min-height:620px;float:left;}
+.content-right{width:400px;height:100%;min-height:620px;float:right;}
+
+/*内页内容页*/
+#list-right-news{height:28px;width:622px;background:url(img/gray.jpg) repeat;padding:4px;color:#fff;text-align:left;line-height:28px;}
+#list-nav{float:right;padding-right:4px;}
+#list-right-news-title{padding:8px;width:615px; text-align:center; font-size:18px; font-weight:bolder; margin-top:4px;}
+#list-right-news-content{padding:8px;width:615px;line-height:18px;}
+
+/*内页列表页*/
+#list-right-news-list{width:628px;height:100%;float:right;margin-top:2px;padding:5px;}
+#list-right-news-list dl{padding:0px;margin:0px;}
+#list-right-news-list dl dd{padding:0px;margin:0px;}
+#list-right-news-list dl dd ul{padding:0px;margin:0px;}
+#list-right-news-list dl dd ul li{width:610px;height:28px;margin-left:8px;padding-left:4px; font:13px;line-height:30px;border-bottom:1px dashed #c5c5c5;vertical-align:bottom;overflow:hidden;zoom:1;}
+#list-right-news-list dl dd ul li a{display:inline-block;width:450px;overflow:hidden;}
+#list-right-news-list dl dd ul li .time{float:right;}
+
+/*内页导航*/
+.pagenavi{width:200px;height:30px;margin:10px auto;font:bold 14px/35px}
+.pagenavi span{margin-left:15px;}
+
+
+/*新闻列表页*/
+.list-left{width:190px;height:100%;min-height:620px;float:left;background:url(img/red.jpg) repeat; border-radius:4px;}
+.list-right{width:630px;height:100%;min-height:620px;float:right;background:#fff;border-radius:4px;}
+#qrcode{width:190px;height:111px;text-align:center;padding-top:20px;}
+#left-title{height:23px;background:url(img/gray1.jpg) repeat;margin-top:8px;text-align:left;line-height:25px;padding-left:4px;}
+#left-title-news{width:190px;height:200px;}
+#left-title-news ul{padding:4px;margin:0px;}
+#left-title-news ul li{width:188px;height:25px;line-height:25px;vertical-align:bottom;overflow:hidden;list-style:none;margin:0px;float:left;}
+#left-title-news ul li a{width:190px;overflow:hidden;font-size:12px;color:#fff;}
+
+/*幻灯片新闻*/
+.content-left #flash-news{width:396px;height:241px;}
+
+/*专业设置*/
+.content-left #major{width:199px;height:64px;float:left;background:url(img/major.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/major.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;margin:25px 0 8px 0;cursor:pointer;}
+#major:hover{width:199px;height:64px;float:left;background:url(img/hover/major.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/major.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;margin:25px 0 8px 0;cursor:pointer;}
+
+/*学院导师*/
+.content-left #teacher{width:199px;height:64px;float:left;background:url(img/teacher.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/teacher.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;margin:25px 0 8px 0;cursor:pointer;}
+#teacher:hover{width:199px;height:64px;float:left;background:url(img/hover/teacher.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/teacher.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;margin:25px 0 8px 0;cursor:pointer;}
+
+/*研究平台*/
+.content-left #platform{width:400px;height:250px;margin-top:4px;float:left;}
+.content-left #platform-left{width:62px;height:28px;background:url(img/red.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/red.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left; color:#fff;text-align:center;line-height:25px;}
+.content-left #platform-main{width:281px;height:26px;background:url(img/platform-main.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform-main.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+.content-left #platform-right{width:56px;height:26px;background:url(img/platform-right.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform-right.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+.content-left #platform-content{width:335px;margin:8px auto;}
+.content-left #platform1{width:106px;height:106px;background:url(img/platform1.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform1.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+.content-left #platform2{width:109px;height:106px;background:url(img/platform2.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform2.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+.content-left #platform3{width:110px;height:106px;background:url(img/platform3.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform3.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+.content-left #platform4{width:107px;height:112px;background:url(img/platform4.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform4.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+.content-left #platform5{width:111px;height:112px;background:url(img/platform5.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform5.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+.content-left #platform6{width:115px;height:112px;background:url(img/platform6.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/platform6.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;;float:left}
+/*hover*/
+#platform1:hover{width:106px;height:106px;background:url(img/hover/platform1.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform1.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+#platform2:hover{width:109px;height:106px;background:url(img/hover/platform2.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform2.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+#platform3:hover{width:110px;height:106px;background:url(img/hover/platform3.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform3.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+#platform4:hover{width:107px;height:112px;background:url(img/hover/platform4.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform4.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+#platform5:hover{width:111px;height:112px;background:url(img/hover/platform5.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform5.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+#platform6:hover{width:115px;height:112px;background:url(img/hover/platform6.jpg); background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/hover/platform6.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left}
+
+/*saerch*/
+.content-right #search{width:400px; padding:2px;}
+.search-input{display:inline-block;border:0;width:327px;height:21px;background:url(img/search-input.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/search-input.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+.search-button{display:block;border:0;width:67px;height:21px;margin-left:2px;background:url(img/search-button.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/search-button.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left; cursor:pointer;}
+
+/*index-news*/
+.content-right #index-news{width:398px;height:230px;margin-bottom:4px;}
+.content-right #news{float:left;width:398px;height:28px;margin:4px 2px 0 0;background:url(img/red.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/red.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover; color:#fff;text-align:left;line-height:28px;padding-left:4px;}
+#news-content ul{margin-top:4px;padding:2px;}
+#news-content ul li{width:390px;height:25px;line-height:25px;border-bottom:1px dashed #c5c5c5;vertical-align:bottom;overflow:hidden;list-style:none;margin:0px;float:left;}
+#news-content ul li a{width:300px;overflow:hidden; }
+#news-content ul li .time{float:right;}
+
+/*index-service*/
+.content-right #index-service{width:398px;height:230px;}
+.content-right #service{float:left;width:398px;height:28px;margin:4px 2px 0 0;background:url(img/gray.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/gray.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;color:#fff;text-align:left;line-height:28px;padding-left:4px;}
+#service-content ul{margin-top:4px;padding:2px;}
+#service-content ul li{width:390px;height:25px;line-height:25px;border-bottom:1px dashed #c5c5c5;vertical-align:bottom;overflow:hidden;list-style:none;margin:0px;float:left;}
+#service-content ul li a{width:300px;overflow:hidden; }
+#service-content ul li .time{float:right;}
+
+/*首页右下广告*/
+.content-right #index-ad{width:398px;height:87px;margin:4px 2px 0 0;background:url(img/index-ad.jpg);background-size:cover;
+backgrounde:none\9;  
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/index-ad.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;float:left;}
+
+/*尾部*/
+.footer{width:823px;height:113px;margin:0 auto;}
+.footer p{text-align:center;}
