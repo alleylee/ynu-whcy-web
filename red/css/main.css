@@ -60,8 +60,8 @@ backgrounde:none\9;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top12.jpg', sizingMethod='scale')\9;-webkit-background-size: cover;-moz-background-size: cover;}
 
 /*中英文*/
-.header #zh-CN{position:relative; top:94px;left:54px;}
-.header #Eng{position:relative;top:94px;left:62px;}
+.header #zh-CN{position:relative; top:94px;left:58px;font-size:12px;}
+.header #Eng{position:relative;top:94px;left:62px;font-size:12px;}
 
 /*导航*/
 .navbar{width:1200px;margin:0 auto;}
@@ -81,7 +81,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/nav-right.jpg
 .mainNav #menu2{ width:69px;margin-left:6px;}
 .mainNav li a,.mainNav li a:visited{color:#fff;height:24px;line-height:24px;text-align:center;display:inline-block;}
 .mainNav li a:hover,.mainNav li.active a{color:#FF7300;text-decoration:none;}
-.mainNav li dl{position:absolute;display:none;left:0;top:10px;padding:10px;background:#0469a9;filter:alpha(opacity=80);opacity:0.8;z-index:9999999;}
+.mainNav li dl{position:absolute;display:none;left:0;top:10px;padding:10px;background:#0469a9;z-index:9999999;}
 .mainNav li dl dd{width:100px;height:25px;line-height:25px;text-align:left;white-space:nowrap;margin:0px;padding:0px;}
 .mainNav li dl dd a{font-size:13px;} 
 .mainNav li.active dl dd a{font-size:13px;background:none;color:#FFFFFF;}
