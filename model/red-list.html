@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="renderer" content="webkit"> 
+<title>$curChannel.title - 云南大学文化发展研究院</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/public2.js"></script>
+</head>
+
+<body>
+    #parse("red-header.vm")    
+   <div class="content">
+    	<div class="list-left">
+        	<div id="qrcode">
+            	<img src="css/img/qrcode.jpg" width="91px" height="91px">
+             </div>
+             <div id="left-title"><a href="$cms.getUrl("研究平台")" target="_blank">研究平台</a></div>
+             <div id="left-title"><a href="$cms.getUrl("新闻公告")" target="_blank">新闻公告</a></div>
+             	<div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("新闻公告",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+             <div id="left-title"><a href="$cms.getUrl("咨询服务")" target="_blank">咨询服务</a></div>
+                <div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("咨询服务",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+         </div>
+         <div class="list-right">
+         	<div id="list-right-news">$curChannel.title<span id="list-nav">当前位置：#foreach($channel in $cms.getPathChannels($curChannel))<a href="$cms.getUrl($channel)">$channel.title ></a>#end</span></div>
+            <div id="list-right-news-list">
+            	<dl>
+                <dd>
+                	<ul>
+       #foreach($article in $cms.getContents($curChannel,18))
+ <li><span class="time">$cms.format($article.publishDate,"yyyy/MM/dd")</span><a href="$cms.getUrl($article)">$article.name</a></li>
+#end                                                                                        
+                    </ul>
+                </dd>
+            </dl>
+            <div class="pagenavi"><span><a href="$cms.getIndexFileName($curChannel, 1)">首页</a></span><span><a href="$cms.getIndexFileName($curChannel, $prePage)">上一页</a></span><span><a href="$cms.getIndexFileName($curChannel, $nextPage)">下一页</a></span><span><a href="$cms.getIndexFileName($curChannel, $totalPage)">尾页</a></span></div>
+            </div>
+         </div>
+         </div>
+    </div>
+    <div style="clear:both"></div>
+    #parse("red-footer.vm")    
+</body></html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="renderer" content="webkit"> 
+<title>$curChannel.title - Culture Development Institute of Yunnan University
+</title>
+<link href="css/en-main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/public2.js"></script>
+<link href="css/slideshow.css" rel="stylesheet" />
+<script src="js/slideshow.js"></script>
+</head>
+
+<body>
+    #parse("eng-header.vm")    
+   <div class="content">
+    	<div class="list-left">
+        	<div id="qrcode">
+            	<img src="css/img/qrcode.jpg" width="91px" height="91px">
+             </div>
+             <div id="left-title"><a href="$cms.getUrl("Platforms")" target="_blank">Platforms</a></div>
+             <div id="left-title"><a href="$cms.getUrl("News")" target="_blank">News</a></div>
+             	<div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("Notice",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+             <div id="left-title"><a href="$cms.getUrl("Consultationservice")" target="_blank">Consultation service</a></div>
+                <div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("Consultationservice",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+         </div>
+         <div class="list-right">
+         	<div id="list-right-news">$curChannel.title<span id="list-nav">Navi：<a href="$cms.getUrl("english")">Index</a>><a href="$cms.getUrl($curChannel.name)">$curChannel.title</a>></span></div>
+            <div id="list-right-news-list">
+            	<dl>
+                <dd>
+                	<ul>
+       #foreach($article in $cms.getContents($curChannel,18))
+ <li><span class="time">$cms.format($article.publishDate,"yyyy/MM/dd")</span><a href="$cms.getUrl($article)">$article.name</a></li>
+#end                                                                                        
+                    </ul>
+                </dd>
+            </dl>
+            <div class="pagenavi"><span><a href="$cms.getIndexFileName($curChannel, 1)">Index</a></span><span><a href="$cms.getIndexFileName($curChannel, $prePage)">Pre. Page</a></span><span><a href="$cms.getIndexFileName($curChannel, $nextPage)">Nex. Page</a></span><span><a href="$cms.getIndexFileName($curChannel, $totalPage)">Last</a></span></div>
+            </div>
+         </div>
+         </div>
+    </div>
+    <div style="clear:both"></div>
+    #parse("eng-footer.vm")    
+</body></html>

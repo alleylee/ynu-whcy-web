@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="renderer" content="webkit"> 
+<title>$curArticle.name - 云南大学文化发展研究院</title>
+<link href="blue/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/public2.js"></script>
+</head>
+
+<body>
+       #parse("blue-header.vm")    
+ <div class="content">
+    	<div class="list-left">
+        	<div id="qrcode">
+            	<img src="blue/css/img/qrcode.jpg" width="91px" height="91px">
+             </div>
+               <div id="left-title"><a href="$cms.getUrl("研究平台")" target="_blank">研究平台</a></div>
+             <div id="left-title"><a href="$cms.getUrl("新闻公告")" target="_blank">新闻公告</a></div>
+             	<div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("新闻公告",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+             <div id="left-title"><a href="$cms.getUrl("咨询服务")" target="_blank">咨询服务</a></div>
+<div id="left-title-news">
+                	<ul>
+	#foreach($article in $cms.getContents("咨询服务",8))
+				<li><a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+                </div>
+         </div>
+         <div class="list-right">
+         	<div id="list-right-news">$curChannel.title<span id="list-nav">当前位置：#foreach($channel in $cms.getPathChannels($curChannel))<a href="$cms.getUrl($channel)">$channel.title ></a>#end</span></div>
+            <div id="list-right-news-title">$curArticle.name</div>
+			<div id="list-right-news-content">
+                         $curArticle.content
+                         <div class="Listbt2" style="text-align:left;">
+                    <ul>
+                        #foreach($doc in $cms.getAttachments($curArticle))
+                        <li><a href="$cms.getUrl($doc)" color="red">$doc.srcFile</a></li>
+                        #end
+
+                    </ul>
+
+                </div>
+
+                         </div>
+         </div>
+         </div>
+    </div>
+    <div style="clear:both"></div>
+    #parse("blue-footer.vm")    
+</body></html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>云南大学文化发展研究院</title>
+<link href="blue/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+<script type="text/javascript" src="js/public2.js"></script>
+ <link href="blue/css/slideshow.css" rel="stylesheet" />
+<script src="js/slideshow.js"></script>
+</head>
+
+<body>
+    #parse("blue-header.vm")       
+ <div class="content">
+    	<div class="content-left">
+        	<div id="flash-news">
+
+						   <div class="comiis_wrapad" id="slideContainer">
+        <div id="frameHlicAe" class="frame cl">
+            <div class="temp"></div>
+            <div class="block">
+                <div class="cl">
+                    <ul class="slideshow" id="slidesImgs">
+#foreach($article in $cms.getContents("图片新闻", 5))
+#if ($cms.hasPicture($article))
+                        <li><a href="$cms.getUrl($article)">
+                            <img src="$cms.getPictureUrl($article)" width="396" height="261" alt="" /></a><span class="title">#summary($article.name 15)</span></li>
+#end
+#end
+                    </ul>
+                </div>
+                <div class="slidebar" id="slideBar">
+                    <ul>
+<script>
+var n=1;
+#foreach($article in $cms.getContents("图片新闻", 5))
+#if ($cms.hasPicture($article))
+document.write('<li>'+n+'</li>');
+n++;
+#end
+#end
+</script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        SlideShow(8000);
+    </script>
+            </div>
+            <a href="$cms.getUrl("专业设置")" target="_blank" title="专业设置"><div id="major"></div></a>
+            <a href="$cms.getUrl("本院教师")" target="_blank" title="学院导师"><div id="teacher"></div></a>
+            <div id="platform">
+            	<div id="platform-left">研究平台</div>
+                <div id="platform-main"></div>
+                <div id="platform-right"></div>
+                <div style="clear:both"></div>
+                <div id="platform-content">
+                	<a href="$cms.getUrl("云南大学国家文化产业研究中心")" target="_blank"><div id="platform1"></div></a>
+                    <a href="$cms.getUrl("全国特色文化产业研究（云南）基地")" target="_blank"><div id="platform2"></div></a>
+                    <a href="$cms.getUrl("云南民族文化建设与文化发展新型智库")" target="_blank"><div id="platform3"></div></a>
+                    <a href="$cms.getUrl("云南省哲学社会科学民族文化与文化产业发展研究基地")" target="_blank"><div id="platform4"></div></a>
+                    <a href="$cms.getUrl("云南省哲学社会科学文化产业发展创新团队")" target="_blank"><div id="platform5"></div></a>
+                    <a href="$cms.getUrl("云南大学文化发展研究院实训基地")" target="_blank"><div id="platform6"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+       	  <div id="search">
+            	<form name="dataForm" class="search" action="/cms/search/searchResults.jsp" target="_blank" method="post">
+	<input name="siteID" size="4" value="$curChannel.site.ID" type = "hidden">
+            	<input type="text" value=" " class="search-input" id="query" name="query"><input type="submit" value=" " class="search-button">
+</form>
+            </div>
+          <div id="index-news">
+          	<div id="news">新闻公告</div>
+            	<div id="news-content">
+            	<ul>
+#foreach($article in $cms.getContents("新闻公告",8))
+				<li><span class="time">$cms.format($article.publishDate,"yyyy/MM/dd")</span>
+				<a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+
+                  </ul>
+                  </div>
+          </div>
+          <div id="index-service">
+          	<div id="service">咨询服务</div>
+            <div id="service-content">
+            	<ul>
+#foreach($article in $cms.getContents("咨询服务",8))
+				<li><span class="time">$cms.format($article.publishDate,"yyyy/MM/dd")</span>
+				<a href="$cms.getUrl($article)">#summary($article.name 30)</a>
+				</li>
+			                #end
+                  </ul>
+            </div>
+          </div>
+          <div id="index-ad">
+          </div>
+    </div>
+    <div style="clear:both"></div>
+    #parse("blue-footer.vm")    
+</body></html>

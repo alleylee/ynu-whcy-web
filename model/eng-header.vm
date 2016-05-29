@@ -1,0 +1,107 @@
+
+	<div class="header">
+    	<div id="top1"></div>
+        <div id="top2"></div>
+        <div id="top3"></div>
+        <div id="top4"></div>
+        <div id="top5"></div>
+        <div id="top6"></div>
+        <div id="top7"></div>
+        <div id="top8"></div>
+        <div id="top9"></div>
+        <div id="top10"></div>
+        <div id="top11"></div>
+        <div id="top12">
+        <div id="lang"><span id="zh-CN"><a href="http://www.whfz.ynu.edu.cn" target="_blank" >中文</a></span>|<span id="Eng"><a href="http://www.whfz.ynu.edu.cn/english" target="_blank" >English</a></span></div>
+        </div>
+	</div>
+    <div class="navbar">
+    	<div id="nav-left"></div>
+        <div id="nav-main">
+        	<ul class="mainNav clearfix" id="mainNav">
+<li id="menu1"><a href="http://www.whfz.ynu.edu.cn/english/">Index</a></li>
+<li id="menu2"><a href="#">About Us</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Instituteoverview"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>	
+
+<li id="menu3"><a href="#">News</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("News"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu4"><a href="#">Party Const</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Partyconstruction"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu5"><a href="#">Consultancy</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Consultationservice"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu6"><a href="#">Teaching Mgt</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Teachingmanagement"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu7"><a href="#">Members</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Teachers"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu8"><a href="#">Research</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Scientificresearchmanagement"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu9"><a href="#">ADM&Career</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Recruitmentandemployment"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu10"><a href="#">Comm&Coop</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Communicationandcooperation"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu11"><a href="#">Download
+</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("Datadownload"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>					
+					</ul>
+        </div>
+        <div id="nav-right"></div>
+    </div>
+    <div style="clear:both"></div>

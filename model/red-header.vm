@@ -1,0 +1,106 @@
+
+	<div class="header">
+    	<div id="top1"></div>
+        <div id="top2"></div>
+        <div id="top3"></div>
+        <div id="top4"></div>
+        <div id="top5"></div>
+        <div id="top6"></div>
+        <div id="top7"></div>
+        <div id="top8"></div>
+        <div id="top9"></div>
+        <div id="top10"></div>
+        <div id="top11"></div>
+        <div id="top12">
+        <div id="lang"><span id="zh-CN"><a href="http://www.whfz.ynu.edu.cn" target="_blank" >中文</a></span>|<span id="Eng"><a href="http://www.whfz.ynu.edu.cn/english" target="_blank" >English</a></span></div>
+        </div>
+	</div>
+    <div class="navbar">
+    	<div id="nav-left"></div>
+        <div id="nav-main">
+        	<ul class="mainNav clearfix" id="mainNav">
+<li id="menu1"><a href="$cms.getUrl($rootChannel)">首 页</a></li>
+<li id="menu2"><a href="#">研究院概况</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("研究院概况"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>	
+
+<li id="menu2"><a href="#">新闻动态</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("新闻动态"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">党建工作</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("党建工作"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">咨询服务</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("咨询服务"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">教学管理</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("教学管理"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">教师团队</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("教师团队"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">科研管理</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("科研管理"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">招生就业</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("招生就业"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">交流合作</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("交流合作"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>
+
+<li id="menu2"><a href="#">资料下载</a>
+<dl>
+#foreach($subChannel in $cms.getChildren("资料下载"))
+<dd><a href="$cms.getUrl($subChannel)" target="_blank" title="$subChannel.title" >$subChannel.title</a></dd>
+#end
+</dl>					
+</li>					
+					</ul>
+        </div>
+        <div id="nav-right"></div>
+    </div>
+    <div style="clear:both"></div>
